@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=I:\School\CSC433_AdvancedAI\MuyGPs_Project\GP_env"
+set "VIRTUAL_ENV=I:\School\CSC433_AdvancedAI\AQI_MuyGPs\GP_env"
 
 if not defined PROMPT set PROMPT=$P$G
 
