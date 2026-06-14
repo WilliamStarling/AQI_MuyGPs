@@ -50,15 +50,20 @@ optimized 	0.100000 	\[2. 		0.014003 	458.167708 	15.830796 	153.469238 	24.2307
 
 
 
-not scaled Y (same as above)
+not scaled Y (same as above) (keep)
 
-optimized 	0.500000 	0.125868 	0.250000 	419.390543 	13.057522 	62.529236 	15.116408 	0.805556
+optimized 	0.500000 	0.010000 	0.250000 	211.730079 	13.735029 	159.606402 	24.547030 	0.908257
 
 
 
-Scaled Y
+Scaled Y (not keep
 
-name 	smoothness 	length scale 	noise variance 	variance scale 	rmse 	mean variance 	mean confidence interval 	coverage
+name 		smoothness 	length scale 	noise variance 	variance scale 	rmse 	mean variance 	mean confidence interval 	coverage
 
 optimized 	0.500000 	0.200000 	0.183233 	0.059109 	13.021853 	0.005797 	0.145570 	0.805556
+
+
+scaled latitude and longitude together (keep)
+
+optimized 	0.500000 	0.010000 	0.250000 	218.549490 	13.621840 	142.705844 	23.108398 	0.899083
 

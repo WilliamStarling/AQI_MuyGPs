@@ -32,6 +32,7 @@ python -m pip install -e MuyGPyS .[tests, docs]
     * <b>\biggest_day_aqi_coords_scaled.csv</b> - all reported AQIs from May 3rd 2003, the day with the most number of reported values. This is the data set we use when training, because it's more natural then the annual averages.
     * <b>\biggest_day_aqi_coords_scaled_noAH.csv</b> - all reported AQIs from May 3rd 2003, but with Alaska and Hawaii removed because they're so far away.
     * <b>\biggest_day_aqi_coords_y_scaled.csv</b> - Same data as biggest_day_aqi_coords_scaled_noAH.csv, but with the AQI values scaled as well. Used to test if scaling the y-data will improve accuracy.
+    * <b>\biggest_day_aqi_coords_scaled_new.csv</b> - the final dataset created. Scales the latitude and longitude together, instead of separaetly, in order to preserve the relationship between them.
     * <b>\scaler_oX.pkl</b> - The saved scaler from scaling only the x data, the coordinates.
     * <b>\scaler_wY.pkl</b> - The saved scaler from scaling the data including the y data.
 * <b>\notebooks\\</b> - Stores the Jupyter Notebooks used to create the preprocessed data, and traing the Gaussian Processes
