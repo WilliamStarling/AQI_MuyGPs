@@ -48,3 +48,17 @@ optimized 	0.100000 	\[2. 		0.014003 	458.167708 	15.830796 	153.469238 	24.2307
 
 &#x09;			0.90364139]
 
+
+
+not scaled Y (same as above)
+
+optimized 	0.500000 	0.125868 	0.250000 	419.390543 	13.057522 	62.529236 	15.116408 	0.805556
+
+
+
+Scaled Y
+
+name 	smoothness 	length scale 	noise variance 	variance scale 	rmse 	mean variance 	mean confidence interval 	coverage
+
+optimized 	0.500000 	0.200000 	0.183233 	0.059109 	13.021853 	0.005797 	0.145570 	0.805556
+

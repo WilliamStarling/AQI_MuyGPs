@@ -25,6 +25,7 @@ python -m pip install -e MuyGPyS .[tests, docs]
 
 ## Project Structure
 * <b>\data\\</b> - stores the datasets created and used.
+    * <b>\AllSatelliteTemps.RData</b> - the heaton comparison dataset, used to recreate the MuyGPs paper experiment, in order to verify succesful setup and GP creation process.
     * <b>\daily_aqi_by_county_2003.csv</b> - This has the reported aqi for each county for each day, along with other info like the reporting site. This is used with aqs_sites.csv to generate training data with only coords and values.
     * <b>\aqs_sites.csv</b> - list of sites and their information, including gps coordinates. Used to build lists of datapoints with gps coords.   
     * <b>\annual_aqi__coords_scaled.csv</b> - equivalent to annual_aqi_coords, except the coordinates are scaled between 0 and 1.
@@ -38,7 +39,8 @@ python -m pip install -e MuyGPyS .[tests, docs]
     * <b>\example_univariate.ipynb</b> - Implementation of the "Univariate Regression Tutorial" tutorial.
     * <b>\aqi_preprocessing.ipynb</b> - Handles preprocessing the public aqi datasets to create training datasets. Used to generate the various extra .csv files.
     * <b>\aqi_regression_prekfold.ipynb</b> - the aqi regression before kfold evaluation was implemented. Easier to understand, since it was easier to seperate and label the steps for model creation and use.
-    * <b>\aqi_regression.ipynb</b> - Where the training of the AQI Gausian process happens. follows the form of the univariate regression tutorial. Has Kfold evaluation applied. Also has code enabling checking how the model performs with a standardized AQI.
+    * <b>\aqi_regression.ipynb</b> - Where the training of the AQI Gausian process happens. follows the form of the univariate regression tutorial. Has Kfold evaluation applied, which messed up it being organized into clean steps. Also has code enabling checking how the model performs with standardized Y values.
+    * <b>\Sklearn_aqi_regression.ipynb</b> - A notebook for preprocessing the heaton comparison dataset as well as repeating part of the MuyGP paper study for creating a GP, verifying the process used for creating AQI models.
     * <b>\Sklearn_aqi_regression.ipynb</b> - An implementation of the sklearn Gaussian Process, to act as a baseline.
 * <b>\README.md</b> - You are here.
 * <b>\Results.md</b> - Very simiple file keeping track of changes to the model and the resulting performance. Used when tryomg to optimize the models, to see what the effects of changing various hyperparameters was.
